@@ -1,6 +1,9 @@
 {
   "name": "thinkverse.dev",
   "version": "0.1.0",
+  "author": "Thinkverse <personal@hallberg.kim>",
+  "repository": "git@github.com:thinkverse/thinkverse.dev.git",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

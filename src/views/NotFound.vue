@@ -9,3 +9,11 @@
     </footer>
   </main>
 </template>
+
+<script>
+  export default {
+    metaInfo: {
+      title: 'Oops, this page does not exist',
+    },
+  }
+</script>

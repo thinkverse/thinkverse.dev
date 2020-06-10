@@ -1,15 +1,21 @@
 <template>
-  <main>
-    <header class="h-screen w-screen bg-gray-900 flex justify-center content-center flex-wrap">
-      <h1 class="font-sans text-white text-6xl lg:text-ps5">
-        <Timer deadline="Juni 11 2020 22:00:00 GMT+0200" />
-      </h1>
-    </header>
+  <section>
+    <main class="h-screen w-screen bg-black flex justify-center content-center flex-wrap font-ps5 text-center leading-normal lg:leading-tight">
+      <section>
+        <h1 class="text-white font-normal text-2xl lg:text-6xl uppercase">
+          The future of gaming
+        </h1>
+        <h2 class="text-white font-medium text-6xl lg:text-ps5">
+          <Timer deadline="Juni 11 2020 22:00:00 GMT+0200" redirect="https://www.youtube.com/watch?v=RuLci-lSeCo" />
+        </h2>
+      </section>
+    </main>
 
-    <footer class="absolute w-screen bottom-0 mb-6 text-gray-100 text-center font-sans text-xl">
-      <span class="text-gray-500">Take me back to</span> <a class="border-b hover:text-gray-500 hover:border-gray-500" href="https://thinkverse.dev/">thinkverse.dev</a>
+    <footer class="absolute w-screen flex justify-between px-6 bottom-0 mb-6 text-gray-500 text-center font-sans text-lg lg:text-xl">
+      <p>take me back to <a class="border-b text-gray-100 hover:text-gray-500 hover:border-gray-500" href="https://thinkverse.dev/" hreflang="en">thinkverse.dev</a>.</p>
+      <p>view the <a class="border-b text-gray-100 hover:text-gray-500 hover:border-gray-500" href="https://github.com/thinkverse/thinkverse.dev" hreflang="en">source code</a>.</p>
     </footer>
-  </main>
+  </section>
 </template>
 
 <script>

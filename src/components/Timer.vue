@@ -7,6 +7,7 @@ export default {
   name: 'Timer',
   props: {
     deadline: String,
+    redirect: String,
   },
   mounted() {
     this.initializeClock(this.$props.deadline);
@@ -32,14 +33,14 @@ export default {
 
       const interval = setInterval(() => {
         const remaining = this.calculateTimeRemaining(time);
-        const divider = `<span class="text-gray-600">:</span>`;
+        const divider = `<span class="text-blue-600">:</span>`;
 
-        element.innerHTML = `${remaining.days}${divider}${remaining.hours}${divider}${remaining.minutes}${divider}${remaining.seconds}`;
+        element.innerHTML = `${remaining.hours}${divider}${remaining.minutes}${divider}${remaining.seconds}`;
 
         if (remaining.total <= 0) {
           clearInterval(interval);
 
-          window.location = 'https://www.youtube.com/playstation';
+          window.location = this.$props.redirect;
         }
       }, 1000);
     }

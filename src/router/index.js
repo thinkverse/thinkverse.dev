@@ -20,11 +20,6 @@ const routes = [
     component: () => import('../views/About.vue')
   },
   {
-    path: '/ps5',
-    name: 'Playstation',
-    component: () => import('../views/Playstation.vue')
-  },
-  {
     path: '*',
     component: () => import('../views/NotFound.vue')
   }

@@ -11,7 +11,7 @@ after_script:
   - cat ./coverage/lcov.info | coveralls
 deploy:
   provider: netlify
-  site: NETLIFY_SITE_ID
-  auth: NETLIFY_AUTH
+  site: $NETLIFY_SITE_ID
+  auth: $NETLIFY_AUTH
   dir: "dist/"
   edge: true

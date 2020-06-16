@@ -1,24 +1,22 @@
-# thinkverse.dev [![Netlify Status](https://api.netlify.com/api/v1/badges/f27d3eb4-a495-4035-898c-ce027e6d579b/deploy-status)](https://app.netlify.com/sites/hungry-mayer-c83b68/deploys)
+# thinkverse.dev
 
-## Project setup
-```
-npm install
+> My wicked Nuxt.js project
+
+## Build Setup
+
+```bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

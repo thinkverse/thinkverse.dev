@@ -6,15 +6,12 @@ os:
 branches:
   only:
   - master
-install:
-  - yarn
 cache:
-  yarn: true
   directories:
     - node_modules
 script:
-  - yarn run test
-  - yarn run generate
+  - npm run test
+  - npm run generate
 after_script:
   - cat ./coverage/lcov.info | coveralls
 deploy:

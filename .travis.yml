@@ -14,7 +14,7 @@ deploy:
   provider: netlify
   site: $NETLIFY_SITE
   auth: $NETLIFY_AUTH
-  dir: "dist/"
+  dir: "_build/"
   cleanup: true
   prod: true
   edge: true

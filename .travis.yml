@@ -1,0 +1,5 @@
+deploy:
+  provider: netlify
+  site: NETLIFY_SITEID
+  auth: NETLIFY_AUTH
+  edge: true

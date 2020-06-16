@@ -13,6 +13,9 @@
     "coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "test": "jest"
   },
+  "bin": {
+    "coveralls": "./bin/coveralls.js"
+  },
   "files": [
     "bin/coveralls.js"
   ],

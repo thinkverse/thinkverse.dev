@@ -9,6 +9,7 @@ script:
   - yarn test
 after_script:
   - cat ./coverage/lcov.info | coveralls
+after_success:
   - yarn generate
 deploy:
   provider: netlify

@@ -1,20 +1,27 @@
 language: node_js
 node_js:
   lts/*
+os:
+  - osx
+branches:
+  only:
+  - master
+install:
+  - yarn
 cache:
   yarn: true
   directories:
     - node_modules
 script:
-  - yarn test
-  - yarn generate
+  - yarn run test
+  - yarn run generate
 after_script:
   - cat ./coverage/lcov.info | coveralls
 deploy:
   provider: netlify
   site: $NETLIFY_SITE
   auth: $NETLIFY_AUTH
-  dir: "dist/"
+  dir: "./dist/"
   cleanup: true
   prod: true
   edge: true

@@ -5,6 +5,9 @@ cache:
   yarn: true
   directories:
     - node_modules
+    - dist
+before_cache:
+  -  rm -rf $HOME/.cache/dist
 script:
   - yarn test
   - yarn generate
@@ -14,7 +17,7 @@ deploy:
   provider: netlify
   site: $NETLIFY_SITE
   auth: $NETLIFY_AUTH
-  dir: "_build/"
+  dir: "dist/"
   cleanup: true
   prod: true
   edge: true

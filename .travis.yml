@@ -9,9 +9,12 @@ script:
   - yarn test
 after_script:
   - cat ./coverage/lcov.info | coveralls
+  - yarn generate
 deploy:
   provider: netlify
   site: $NETLIFY_SITE
   auth: $NETLIFY_AUTH
   dir: "dist/"
+  cleanup: true
+  prod: true
   edge: true

@@ -1,9 +1,6 @@
 language: node_js
 node_js:
   lts/*
-env:
-  - NETLIFY_SITEID=<site>
-  - NETLIFY_AUTH=<auth>
 cache:
   yarn: true
   directories:
@@ -14,7 +11,7 @@ after_script:
   - cat ./coverage/lcov.info | coveralls
 deploy:
   provider: netlify
-  site: <site>
-  auth: <auth>
+  site: NETLIFY_SITEID
+  auth: NETLIFY_AUTH
   dir: "dist/"
   edge: true

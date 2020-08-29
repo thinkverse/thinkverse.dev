@@ -5,29 +5,10 @@
         Sorry, the page you wanted to see cannot be found.
       </span>
     </h1>
-    <NuxtLink to="/" title="Return to home page."  class="block text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none text-sm md:text-base lg:text-lg font-semibold pt-2 pb-5 px-5 md:p-0">
+    <NuxtLink to="/" title="Return to home page." class="not-found-anchor block text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none text-sm md:text-base lg:text-lg font-semibold pt-2 pb-5 px-5 md:p-0">
       <span>
         Return to home.
       </span>
     </NuxtLink>
   </main>
 </template>
-
-<style scoped>
-a[href] > span {
-  text-decoration: none;
-  position: relative;
-  z-index: 0;
-}
-
-a[href]:hover > span:before,
-a[href]:focus > span:before {
-  transform: skew(-1deg) rotate(-1deg);
-  border-bottom: 13px solid #dacc14;
-  left: -2px; right: 2px;
-  position: absolute;
-  bottom: 2px;
-  content: "";
-  z-index: -1;
-}
-</style>

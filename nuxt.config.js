@@ -1,5 +1,6 @@
 export default {
   mode: 'universal',
+  target: 'static',
   head: {
     title: 'Personal hobby site of Thinkverse',
     titleTemplate: 'Thinkverse — %s',

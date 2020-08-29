@@ -10,3 +10,11 @@
     </NuxtLink>
   </main>
 </template>
+
+<script>
+export default {
+  head: {
+    title: 'Page not found.'
+  }
+}
+</script>

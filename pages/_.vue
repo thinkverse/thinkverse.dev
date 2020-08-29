@@ -5,7 +5,7 @@
         Sorry, the page you wanted to see cannot be found.
       </span>
     </h1>
-    <NuxtLink to="/" title="Return to home page." class="not-found-anchor block text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none text-sm md:text-base lg:text-lg font-semibold pt-2 pb-5 px-5 md:p-0">
+    <NuxtLink to="/" title="Return to home page." class="not-found-anchor block no-underline text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none text-sm md:text-base lg:text-lg font-semibold pt-2 pb-5 px-5 md:p-0">
       <span>
         Return to home.
       </span>

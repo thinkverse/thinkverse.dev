@@ -19,10 +19,7 @@ export default {
       { hid: 'twitter:description', name: 'twitter:description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:site', name: 'twitter:site', content: 'https://thinkverse.dev' },
-      { hid: 'twitter:creator', name: 'twitter:creator', content: '@Thinkverse' },
-
-      { hid: 'ip:name', itemprop: 'name', content: 'Personal hobby site of Thinkverse' },
-      { hid: 'ip:description', itemprop: 'description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' }
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@Thinkverse' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

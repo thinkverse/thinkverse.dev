@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased min-h-screen flex flex-col items-center sm:justify-center bg-gray-100 dark:bg-gray-900 pt-10 mx-auto sm:pt-0">
+  <div class="min-h-screen flex flex-col items-center sm:justify-center pt-10 mx-auto sm:pt-0">
     <div>
       <h1 class="text-3xl sm:text-4xl font-medium font-serif text-gray-900 dark:text-gray-200 mb-2 sm:mb-5">
         Articles by Thinkverse

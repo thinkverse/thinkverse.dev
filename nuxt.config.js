@@ -43,5 +43,8 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  env: {
+    DEVTO: process.env.DEVTO || 'not-set'
   }
 }

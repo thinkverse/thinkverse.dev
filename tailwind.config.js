@@ -17,6 +17,11 @@ module.exports = {
     './pages/*.vue'
   ],
   theme: {
+    extend: {
+      screens: {
+        'dark': { 'raw': '(prefers-color-scheme: dark)' }
+      }
+    },
     ch: {
       '10': 10,
       '15': 15,

@@ -1,10 +1,10 @@
 <template>
-  <div class="antialiased min-h-screen flex flex-col items-center sm:justify-center bg-gray-100 pt-10 mx-auto sm:pt-0">
+  <div class="antialiased min-h-screen flex flex-col items-center sm:justify-center bg-gray-100 dark:bg-gray-900 pt-10 mx-auto sm:pt-0">
     <div>
-      <h1 class="text-3xl sm:text-4xl font-medium font-serif text-gray-900 mb-2 sm:mb-5">
+      <h1 class="text-3xl sm:text-4xl font-medium font-serif text-gray-900 dark:text-gray-200 mb-2 sm:mb-5">
         Articles by Thinkverse
       </h1>
-      <ArticlesList class="text-xs sm:text-sm lg:text-base text-gray-700 space-y-2 -ml-2" />
+      <ArticlesList class="text-xs sm:text-sm lg:text-base text-gray-700 dark:text-gray-500 space-y-2 -ml-2" />
     </div>
   </div>
 </template>

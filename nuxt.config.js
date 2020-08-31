@@ -8,19 +8,19 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
 
-      { name: 'description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
+      { hid: 'description', name: 'description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
 
-      { property: 'og:title', content: 'Personal hobby site of Thinkverse' },
-      { property: 'og:description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
-      { property: 'og:url', content: 'https://thinkverse.dev' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Thinkverse' },
+      { hid: 'og:title', property: 'og:title', content: 'Personal hobby site of Thinkverse' },
+      { hid: 'og:description', property: 'og:description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
+      { hid: 'og:url', property: 'og:url', content: 'https://thinkverse.dev' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Thinkverse' },
 
-      { name: 'twitter:title', content: 'Personal hobby site of Thinkverse' },
-      { name: 'twitter:description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: 'https://thinkverse.dev' },
-      { name: 'twitter:creator', content: '@Thinkverse' }
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Personal hobby site of Thinkverse' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'A hobby site where Thinkverse writes about code, books, and everything he finds interesting.' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: 'https://thinkverse.dev' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@Thinkverse' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

@@ -11,23 +11,16 @@
 </template>
 
 <script>
-const ARTICLE_ENDPOINT = 'https://dev.to/api/articles?username=thinkverse'
+import { mapGetters } from 'vuex'
 
 export default {
-  data () {
-    return {
-      articles: []
-    }
+  async fetch ({ store }) {
+    await store.dispatch('devto/fetch')
   },
-  mounted () {
-    fetch(ARTICLE_ENDPOINT)
-      .then(response => response.json())
-      .then((data) => { this.setArticles([...data]) })
-  },
-  methods: {
-    setArticles (articles) {
-      this.articles = articles.filter(article => !article.title.includes('opengpg proof'))
-    }
+  computed: {
+    ...mapGetters({
+      articles: 'devto/get'
+    })
   },
   head: {
     title: 'Articles written by Thinkverse',

@@ -32,11 +32,20 @@ export default {
   plugins: [
   ],
   buildModules: [
+    '@nuxtjs/google-analytics',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss'
   ],
   modules: [
   ],
+  googleAnalytics: {
+    id: 'UA-12301-2'
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
+  },
   build: {
     extend (config, ctx) {
     }

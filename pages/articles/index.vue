@@ -1,23 +1,15 @@
 <template>
   <div class="min-h-screen flex flex-col justify-center items-center text-center mx-auto">
-    <ul v-for="article in articles" :key="article.slug">
-      <li>
-        <a :href="article.url">
-          {{ article.title }}
-        </a>
-      </li>
-    </ul>
+    <ArticlesList />
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import ArticlesList from '@/components/Devto/ArticlesList'
 
 export default {
-  computed: {
-    ...mapGetters({
-      articles: 'devto/get'
-    })
+  components: {
+    ArticlesList
   },
   head: {
     title: 'Articles written by Thinkverse',

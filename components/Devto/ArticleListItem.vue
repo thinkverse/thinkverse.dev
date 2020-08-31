@@ -1,6 +1,6 @@
 <template>
   <li>
-    <a :href="article.url">
+    <a :href="article.url" class="transition-colors ease-in-out duration-200 hover:bg-pink-600 hover:text-pink-100 focus:bg-pink-600 focus:text-pink-100 px-2 py-1">
       {{ article.title }}
     </a>
   </li>

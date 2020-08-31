@@ -11,7 +11,7 @@
 </template>
 
 <script>
-const ARTICLE_ENDPOINT = 'https://dev.to/api/articles/me/published'
+const ARTICLE_ENDPOINT = 'https://dev.to/api/articles?username=thinkverse'
 
 export default {
   data () {
@@ -20,13 +20,7 @@ export default {
     }
   },
   mounted () {
-    fetch(ARTICLE_ENDPOINT, {
-      mode: 'cors',
-      headers: {
-        'Access-Control-Allow-Headers': 'origin, x-requested-with, accept, api-key',
-        'api-key': process.env.DEVTO
-      }
-    })
+    fetch(ARTICLE_ENDPOINT)
       .then(response => response.json())
       .then((data) => { this.setArticles([...data]) })
   },

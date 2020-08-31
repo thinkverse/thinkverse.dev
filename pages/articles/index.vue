@@ -14,9 +14,6 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  async fetch ({ store }) {
-    await store.dispatch('devto/fetch')
-  },
   computed: {
     ...mapGetters({
       articles: 'devto/get'

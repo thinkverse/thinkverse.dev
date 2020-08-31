@@ -28,6 +28,14 @@ export default {
     setArticles (articles) {
       this.articles = articles.filter(article => !article.title.includes('opengpg proof'))
     }
+  },
+  head: {
+    title: 'Articles written by Thinkverse',
+    meta: [
+      { name: 'description', content: 'Here you can find a collection of articles written by Thinkverse.' },
+      { property: 'og:description', content: 'Here you can find a collection of articles written by Thinkverse.' },
+      { name: 'twitter:description', content: 'Here you can find a collection of articles written by Thinkverse.' }
+    ]
   }
 }
 </script>

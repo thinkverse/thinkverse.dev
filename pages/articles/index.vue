@@ -4,7 +4,7 @@
       <h1 class="text-3xl sm:text-4xl font-medium font-serif text-gray-900 mb-2 sm:mb-5">
         Articles by Thinkverse
       </h1>
-      <ArticlesList class="text-xs sm:text-sm text-gray-700 space-y-2 -ml-2" />
+      <ArticlesList class="text-xs sm:text-sm lg:text-base text-gray-700 space-y-2 -ml-2" />
     </div>
   </div>
 </template>

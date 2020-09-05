@@ -8,6 +8,9 @@ const plugin = require('tailwindcss/plugin')
 const _ = require('lodash')
 
 module.exports = {
+  experimental: {
+    darkModeVariant: true
+  },
   purge: [
     './components/**/*.vue',
     './components/*.vue',
@@ -17,11 +20,6 @@ module.exports = {
     './pages/*.vue'
   ],
   theme: {
-    extend: {
-      screens: {
-        'dark': { 'raw': '(prefers-color-scheme: dark)' }
-      }
-    },
     ch: {
       '10': 10,
       '15': 15,
@@ -49,6 +47,7 @@ module.exports = {
     })
   ],
   future: {
-    removeDeprecatedGapUtilities: true
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true
   }
 }

@@ -37,6 +37,9 @@ export default {
   googleAnalytics: {
     id: 'UA-12301-2'
   },
+  tailwindcss: {
+    jit: true
+  },
   publicRuntimeConfig: {
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID

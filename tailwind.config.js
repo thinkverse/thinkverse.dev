@@ -1,16 +1,9 @@
-/*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
+const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 const _ = require('lodash')
 
 module.exports = {
-  experimental: {
-    darkModeVariant: true
-  },
+  darkMode: 'media',
   purge: [
     './components/**/*.vue',
     './components/*.vue',
@@ -21,12 +14,18 @@ module.exports = {
   ],
   theme: {
     ch: {
-      '10': 10,
-      '15': 15,
-      '20': 20,
-      '30': 30,
-      '40': 40,
-      '50': 50
+      10: 10,
+      15: 15,
+      20: 20,
+      30: 30,
+      40: 40,
+      50: 50
+    },
+    extend: {
+      colors: {
+        teal: colors.teal,
+        blue: colors.blue
+      }
     }
   },
   variants: {},
@@ -43,11 +42,7 @@ module.exports = {
         {
           variants: ['responsive']
         }
-      );
+      )
     })
-  ],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  }
+  ]
 }

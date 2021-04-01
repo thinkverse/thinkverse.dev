@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   target: 'static',
   head: {
     title: 'Personal hobby site of Thinkverse',
@@ -27,19 +26,19 @@ export default {
     ]
   },
   loading: { color: '#fff' },
-  css: [
-  ],
-  plugins: [
-  ],
+  css: [],
+  plugins: [],
   buildModules: [
     '@nuxtjs/google-analytics',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss'
   ],
-  modules: [
-  ],
+  modules: [],
   googleAnalytics: {
     id: 'UA-12301-2'
+  },
+  tailwindcss: {
+    jit: true
   },
   publicRuntimeConfig: {
     googleAnalytics: {

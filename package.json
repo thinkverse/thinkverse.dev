@@ -16,14 +16,14 @@
     "nuxt": "^2.14.4"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^2.0.2",
-    "@nuxtjs/eslint-module": "^1.2.0",
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.1",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/tailwindcss": "^3.0.2",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.23.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "jest": "^24.9.0",
     "vue-jest": "^4.0.0-0"
